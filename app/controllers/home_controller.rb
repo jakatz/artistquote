@@ -1,7 +1,7 @@
 class HomeController < ApplicationController
   def index
     @artist = 'Bob Doe'
-    api_data = fetch_event_api_data(params[:artist])
+    api_data = fetch_event_api_data()
     @data = process_api_data(api_data)
   end
 
